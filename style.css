@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap');
+
+:root {
+    --bg-color : #3d405b;
+    --box-color : #f4f1de;
+    --box-color-scd : #81b29a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 10% 10% 10% 20%;
+    grid-template-rows: 10% 10% 10% 5% 5% 5% 5% 10% 10% 10% 10% 10%;
+}
+
+.box-title {
+    grid-row: 1;
+    grid-column: 1;
+}
+.box-title h1 {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ffffff;
+}
+
+.box-container-1 {
+    background-color: var(--box-color);
+    border-radius: 16px;
+    grid-row: 3/5;
+    grid-column: 3/5;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.container-1 #erreur {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.container-1 button {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #df677b;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0.1px solid #df677b;
+    border-radius: 1rem;
+}
+
+.container-1 button:hover {
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #df677b;
+    background-color: #ffffff;
+    border: 0.1px solid black;
+}
+
+.container-informations p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-informations input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.container-informations input#ipv4 {
+    width: 9rem;
+    text-align: right;
+}
+.container-informations input#submask {
+    width: 3.5rem;
+    text-align: center;
+}
+
+.box-container-2 {
+    background-color: var(--box-color-scd);
+    border-radius: 16px;
+    grid-row: 4/10;
+    grid-column: 4/7;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 3rem;
+}
+
+.box-container-2>div {
+    display: flex;
+    justify-content: space-between;
+}
+.box-container-2>* {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: semi-bold;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.box-container-2>div>span{
+    color: var(--bg-color);
+}

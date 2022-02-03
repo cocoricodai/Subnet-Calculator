@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Subnet Calculator</title>
+    </head>
+
+    <body>
+        <div class="box-title">
+            <h1>Subnet Calculator</h1>
+        </div>
+        <div class="box-container-1">
+            <div class="container-1">
+                <div class="container-informations">
+                    <p>IPv4 / Submask</p>
+                    <input type="text" name="ipv4" id="ipv4" maxlength="15"> /
+                    <input type="text" name="submask" id="submask" maxlength="2">
+                </div>
+                <button type="button" name="calculer" id="calculer">Calculer</button>
+                <p id="erreur"></p>
+            </div>
+        </div>
+        <div class="box-container-2">
+            <div>
+                <p>Netmask : </p><span id="netmask"></span>
+            </div>
+            <div>
+                <p>NetworkID : </p><span id="networkID"></span>
+            </div>
+            <div>
+                <p>HostRange : </p><span id="hostrange"></span>
+            </div>
+            <div>
+                <p>Broadcast : </p><span id="broadcast"></span>
+            </div>
+            <div>
+                <p>Nombre d'hôtes : </p><span id="host"></span>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
