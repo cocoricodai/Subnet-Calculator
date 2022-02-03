@@ -34,13 +34,14 @@ body {
 .box-container-1 {
     background-color: var(--box-color);
     border-radius: 16px;
-    grid-row: 3/5;
+    grid-row: 3/6;
     grid-column: 3/5;
     z-index: 2;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
+
 
 .container-1 {
     display: flex;
@@ -94,7 +95,7 @@ body {
 .box-container-2 {
     background-color: var(--box-color-scd);
     border-radius: 16px;
-    grid-row: 4/10;
+    grid-row: 5/11;
     grid-column: 4/7;
     display: flex;
     justify-content: center;
