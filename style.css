@@ -116,3 +116,31 @@ body {
 .box-container-2>div>span{
     color: var(--bg-color);
 }
+
+@media screen and (max-width: 1200px){
+    body {
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .box-title h1 {
+        padding: 2rem 0;
+    }
+    
+    .box-container-1 {
+        width: 380px;
+        margin: 1rem;
+    }
+    .box-container-1 p {
+        padding: 1rem;
+    }
+    
+    .box-container-2 {
+        width: 380px;
+        padding: 1rem;
+    }
+    .box-container-2>* {
+        font-size: 1rem;
+    }
+}
